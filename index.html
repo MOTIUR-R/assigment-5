@@ -18,7 +18,8 @@
         }
     </style>
 </head>
-<body>
+<body >
+  <section id="asol">
     <!-- header section start here -->
     <header class="mx-6 mt-5 lg:mx-16 mt-6 font-rale">
         <!-- nav bar start here -->
@@ -59,11 +60,11 @@
             <div class="hero sm:w-[1205px;] h-[700px;] lg:w-[1205px;] lg:h-[545px;]" style="background-image: url(/images/banner.png);">
                 <div class="hero-overlay sm:w-auto lg:bg-opacity-60"></div>
                 <div class="hero-content lg:text-center text-neutral-content">
-                  <div class=" lg:w-[600px;] h-[172px;]">
+                  <div class=" lg:w-[600px;] lg:h-[172px;]">
                     <h1 class=" lg:w-[572px;] mb-5 text-5xl text-[#FFFFFF] font-bold">End-to-End Travel with
                         <span class="text-[#1DD100]">M Paribahan</span></h1>
                     <p class="mb-5 text-[#FFFFFF]">Amidst the rolling landscapes and passing towns, the bus journey unfolds like a tapestry of transient moments, weaving together the diverse narratives of its passengers into a shared adventure.</p>
-                    <button class="btn bg-[#1DD100] text-black font-bold">Buy Tickets</button>
+                    <button class="btn bg-[#1DD100] text-black font-bold"><a href="#main-container">Buy Tickets</a></button>
                   </div>
                 </div>
             </div>
@@ -104,11 +105,11 @@
                 <button class="btn btn-outline mt-4 text-[#1DD100]">See All Offers</button>
             </div>
         </section>
-        <!-- best offers end -->
+        <!-- best offers end --> 
     </header>
     <!-- header section end here -->
-    <main class="flex-col justify-center items-center mt-12 lg:mt-20 font-rale bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-3xl">
-      <section class="mx-6 lg:mx-16">
+    <main id="main-container" class="flex-col justify-center items-center mt-12 lg:mt-20 font-rale bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-3xl">
+      <section id="target" class="mx-6 lg:mx-16">
         <!-- grenline section start here -->
         <div class="text-center mt-8 lg:mt-16 mb-4 lg:mb-8">
           <h1 class="text-5xl font-semibold text-black">M Paribahan</h1>
@@ -122,7 +123,7 @@
                 <span><h2 class="text-3xl font-semibold text-black">Greenline Paribahan</h2>
                   <p>Coach-009-WEB ! AC_Business</p></span>
               </div>
-              <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold"><img src="images/seat-green.png" alt=""> 40 Seats left</a>
+              <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold"><img src="images/seat-green.png" alt=""><span id="remaining-seat">8 </span>Seats left</a>
             </div> 
             <div class="bg-[#F7F8F8] rounded-xl mt-4 space-y-6 p-4 lg:p-8 lg:w-[808px;] lg:h-[258px;]">
               <span class="flex lg:justify-between"><p>Route</p><p class="text-black font-bold">Dhaka - Sylhet</p></span>
@@ -144,7 +145,7 @@
 
       <section class=" mx-6 lg:mx-24 mt-8">
         <!-- bus seat section start here -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 p-6 lg:p-14 lg:space-x-10 lg:w-[1170px;] lg:h-[570px;] rounded-xl bg-[#FFFFFF]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 p-6 lg:p-14 lg:space-x-10 lg:w-[1170px;] lg:h-[956px;] rounded-xl bg-[#FFFFFF]">
           <div class="columns-1 space-y-4">
             <h3 class="text-2xl font-bold text-black">Select Your Seat</h3>
             <hr>
@@ -160,20 +161,20 @@
             <div class="space-y-5">
               <div class="lg:space-x-10">
                 <span class="space-x-5">
-                  <button class="btn w-[110px;]">A1</button><button class="btn w-[110px;]">A2</button>
+                  <button class="btn seat w-[110px;]">A1</button><button class="btn seat w-[110px;]">A2</button>
                 </span>
                 <span class="space-x-5">
-                  <button class="btn w-[110px;]">A3</button><button class="btn w-[110px;]">A4</button>
-                </span>
+                  <button class="btn seat w-[110px;]">A3</button><button class="btn seat w-[110px;]">A4</button>
+                </span> 
               </div>
               <div class="lg:space-x-10">
                 <span class="space-x-5">
-                  <button class="btn w-[110px;]">B1</button><button class="btn w-[110px;]">B2</button>
+                  <button class="btn seat w-[110px;]">B1</button><button class="btn seat w-[110px;]">B2</button>
                 </span>
                 <span class="space-x-5">
-                  <button class="btn w-[110px;]">B3</button><button class="btn w-[110px;]">B4</button>
+                  <button class="btn seat w-[110px;]">B3</button><button class="btn seat w-[110px;]">B4</button>
                 </span>
-              </div>
+              </div> 
 
               
               
@@ -184,47 +185,60 @@
           <div class="columns-1">
             <h3 class="text-2xl mb-5 font-bold text-black">Select Your Seat</h3>
             <hr>
-            <div class="bg-[#F7F8F8] p-5 rounded-xl mt-5">
+            <div class="bg-[#F7F8F8]  p-5 rounded-xl mt-5">
               <div class="flex justify-around mb-2 text-black text-lg font-semibold">
-                  <p>Seat <span class="bg-[#1DD100] rounded-full">0</span></p>
+                  <p>Seat <span class="bg-[#1DD100] rounded-full" id="seat-count">0</span></p>
                   <p>Class</p>
                   <p>Price</p>
               </div>
               <hr>
-              <div class="mt-2">
-                <span class="flex justify-around"><p>A1</p><p>Economoy</p><p>550</p></span>
-                <span class="flex justify-around"><p>A2</p><p>Economoy</p><p>550</p></span>
-                <span class="flex justify-around"><p>B3</p><p>Economoy</p><p>550</p></span>
-                <span class="flex justify-around"><p>B4</p><p>Economoy</p><p>550</p></span>
+                <!-- this is append child section -->
+              <div id="table-information" class="grid grid-cols-3">
+
+            
               </div>
-              <p class="flex justify-between mt-2 mb-2 text-black text-lg font-semibold"><span>Total Price</span> <span>BDT 0</span></p>
-              <label class="input flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
-                <button class="btn btn-sm text-white bg-[#1DD100]">Apply</button>
+              <hr>
+              <p class="flex justify-between mt-2 mb-2 text-black text-lg font-semibold"><span>Total Price</span> <span id="total-price">BDT 0</span></p>
+              
+              <!-- <p class="flex justify-between mt-2 mb-2 text-black text-lg font-semibold"><span>Grand Total</span><span id="grand-price">BDT 0</span></p> -->
+
+              <div id="discount-price" class="flex justify-between mb-2">
+
+              </div>
+              <div id="gaibul-hawa">
+               <!-- <textarea name="" id="field" cols="53" rows="1" placeholder="Have any coupon?" 
+               ></textarea>
+               <button  id="apply" class="btn rounded-xl bg-[#1DD100] mt-5 text-white" >Apply</button> -->
+               <label class="input flex items-center gap-2">
+                <input id="field"  type="text" class="grow" placeholder="Search" />
+                <button  id="apply" class="btn btn-sm text-white bg-[#1DD100]">Apply</button>
               </label>
-              <p class="flex justify-between mt-2 mb-2 text-black text-lg font-semibold"><span>Grand Total</span> <span>BDT 0</span></p>
-            </div>
-               <!-- Open the modal using ID.showModal() method -->
-              <button class="btn w-full bg-[#1DD100]" onclick="my_modal_1.showModal()">Next</button>
-              <dialog id="my_modal_1" class="modal">
-                <div class="modal-box text-black text-center justify-center items-center flex flex-col">
-                  <img class="w-[30px] lg:w-[80px]" src="images/success.png" alt="">
-                  <h3 class="mt-2 font-bold text-[#1DD100] text-lg">SUCCESS</h3>
-                  <p class="py-4">Thank you for bocking our Bus seats. <br>We are working hard to find the the best service and juerny for you
-                  </p>
-                  <p>Shortly you will find a confimation in your email</p>
-                  <div class="modal-action">
-                    <form method="dialog">
-                      <!-- if there is a button in form, it will close the modal -->
-                      <button class="btn rounded-3xl bg-[#1DD100] w-[180px] text-white">Continue</button>
-                    </form>
-                  </div>
+              </div>
+
+              <div class="mt-3">
+                <div class="flex justify-between text-black text-lg font-semibold">
+                 <h3 class="">Grand Price</h3>
+                 <p>BDT <span id="grand-price">0</span></p>
                 </div>
-              </dialog>
+              </div>
+
+              <div class="space-y-5 mt-5">
+                <h3 class="text-xl font-bold">Passenger Name*</h3>
+                <input type="text" placeholder="Enter Your Name" class="input w-full max-w-xs" />
+                <h3 class="text-xl font-bold">Phone Number*</h3>
+                <input type="text" id="phone-number" placeholder="Enter Your Phone Number" class="input w-full max-w-xs" />
+                <!-- <textarea name=""  cols="30" rows="2" placeholder=""></textarea> -->
+                <h3 class="text-xl font-bold">Email ID</h3>
+                <input type="text" placeholder="Enter your Email" class="input input-bordered w-full max-w-xs" />
+                
+              </div>
+              
+              <button id="next-btn" class="btn w-full bg-[#1DD100] mt-5 text-white" >Next</button>
           </div>
 
+
         </div>
-        <!-- bus seat section end here -->
+        
       </section>
 
     </main>
@@ -255,5 +269,18 @@
         </div>
        </section>
     </footer>
+  </section>
+        <!-- success section -->
+    <section id="success" class="container flex justify-center lg:pt-16 items-center mx-auto hidden">
+    <div class="text-center rounded-xl bg-gray-300 border-solid  flex flex-col justify-center items-center lg:w-[718px;] lg:h-[481px;]">
+    <img class="w-[38px]" src="images/success.png" alt="">
+      <h3 class="text-[#1DD100] text-2xl font-semibold">SUCCESS</h3>
+      <p class="text-black">Thank you for Booking Our Bus Seats. <br>
+        We are working hard to find the best service and deals for you. <br>
+        Shortly you will find a confirmation in your email.</p>
+    </div>
+    </section>
+
+    <script src="index.js"></script>
 </body>
 </html>
